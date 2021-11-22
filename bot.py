@@ -56,6 +56,8 @@ for Filename in os.listdir("./cmds"):
     if Filename.endswith(".py"):
         bot.load_extension(F"cmds.{Filename[:-3]}")
 
+#doing github test ha
+
 if __name__ == "__main__":
 	keep_alive()
 	TOKENa = os.environ.get("DISCORD_BOT_SECRET")

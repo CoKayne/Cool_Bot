@@ -37,14 +37,14 @@ class Event(Cog_extension): #just testing
         # if msg.content.endswith("JACK"):
         #     await msg.channel.send(file = PIC)
 
-    @commands.Cog.listener() #error response
-    async def on_command_error(self, ctx, error):
-        if isinstance(error, commands.errors.MissingRequiredArgument):
-            await ctx.send("Missing arguments!")
-        elif isinstance(error, commands.errors.CommandNotFound):
-            await ctx.send("There is no such command!")
-        else:
-            await ctx.send("An error occured")
+    # @commands.Cog.listener() #error response
+    # async def on_command_error(self, ctx, error):
+    #     if isinstance(error, commands.errors.MissingRequiredArgument):
+    #         await ctx.send("Missing arguments!")
+    #     elif isinstance(error, commands.errors.CommandNotFound):
+    #         await ctx.send("There is no such command!")
+    #     else:
+            # await ctx.send("An error occured")
        
     @commands.Cog.listener() #emoji add roles + DM
     async def on_raw_reaction_add(self, data): 
